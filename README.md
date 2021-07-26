@@ -5,8 +5,8 @@ create database companymanagement;
 use companymanagement;
 
 create table company(
-	id int auto_increment unique,
-	c_name varchar(100) primary key, 
+	id int identity(1,1) primary key,
+	name varchar(100), 
 	website varchar(100),
 	description varchar(500)
 );
